@@ -1,0 +1,35 @@
+---
+title: Articles
+layout: page
+---
+
+<div class="mb-24 space-y-4">
+    {% for article in collections.articles reversed %}
+    <div class="px-8 py-8 bg-white rounded-lg shadow">
+        <div class="flex items-center">
+            <img class="h-36 w-36 object-cover rounded-lg shadow" src="{{ article.data.image }}" alt="">
+            <div class="ml-8">
+                <div>
+                    <h3 class="text-green-medium border-b-2 border-green-medium text-xl font-semibold"><a href="{{ article.url }}">{{ article.data.title }}</a></h3>
+                    <span class="text-xs text-black text-gray-500" >{{ article.data.date | date: '%Y-%m-%d' }}</span>
+                </div>
+                
+                <p class="mt-2 max-w-md text-gray-700">{{ article.data.description }}...</p>
+                <a class="mt-2 border-b-2 border-transparent hover:border-green-medium text-green-medium font-semibold inline-flex items-center" href="{{ article.url }}">
+                    Read More
+                    <svg  class="ml-0.5 h-5 w-5" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M13.75 6.75L19.25 12L13.75 17.25"></path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M19 12H4.75"></path>
+                    </svg>
+
+
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    {% endfor %}
+</div>

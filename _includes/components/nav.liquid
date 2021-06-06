@@ -1,0 +1,125 @@
+<script>
+    function nav() {
+        return {
+            isOpen: false
+        }
+    }
+</script>
+
+<div x-data="nav()">
+
+
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="px-2 py-4 flex justify-between items-center">
+            <h1 class="text-5xl font-black">
+                <a href="/">MJ</a>
+            </h1>
+            <div class="block lg:hidden">
+                <button @click="isOpen = !isOpen" class="z-50 p-2 text-3xl xl:hidden focus:outline-none">
+                    <div :class="{ 'open': isOpen }" class="menu-btn">
+                        <div class="menu-btn__burger">
+                        </div>
+                    </div>
+
+                </button>
+            </div>
+            <div class="hidden lg:block flex items-center space-x-4">
+                <a href="/about" class="uppercase font-semibold">About Me</a>
+                <a href="/projects" class="uppercase font-semibold">Work</a>
+                <a href="/articles" class="uppercase font-semibold">Articles</a>
+                <a href="/contact" class="btn cta">Hire Me</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block lg:hidden relative">
+        <div x-show="isOpen" x-transition:enter="transition duration-200 ease-out" x-transition:enter-start="opacity-0 "
+            x-transition:enter-end="opacity-100" x-transition:leave:="transition duration-200 ease-in"
+            x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+            class="absolute h-screen w-screen bg-green-light z-30 flex justify-center">
+            <div class="mt-48 text-3xl text-center">
+                <div>
+                    <a href="/about/" class="uppercase font-semibold">About Me</a>
+                </div>
+                <div class="mt-4">
+                    <a href="/projects/" class="uppercase font-semibold">Work</a>
+                </div>
+                <div class="mt-4">
+                    <a href="/articles/" class="uppercase font-semibold">Articles</a>
+                </div>
+                <div class="mt-8">
+                    <a href="/contact/" class="btn cta">Hire Me</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+    .menu-btn__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1em;
+        height: 1em;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger {
+        height: 4px;
+        width: 0.875em;
+        border-radius: 20%;
+        background: #182628;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .1s ease-in-out;
+    }
+
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 0.875em;
+        height: 4px;
+        border-radius: 20%;
+        background: #182628;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .1s ease-in-out;
+
+    }
+
+    .menu-btn__burger::before {
+        transform: translate(-0.45em, -0.3em);
+    }
+
+    .menu-btn__burger::after {
+        transform: translate(-0.45em, 0.3em);
+    }
+
+    .menu-btn.open .menu-btn__burger {
+        /* transform: translateX(-50px); */
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg);
+        margin-left: -12px;
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg);
+        margin-left: -12px;
+    }
+</style>

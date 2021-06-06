@@ -1,0 +1,42 @@
+<h3 id="contact">Ready To Start A Project Together?</h3>
+<p>I'd love to work with you. Fill out the form below to tell me more or send me an email at <a href="mailto:maciej@janowski.dev">maciej@janowski.dev</a></p>
+<form name="contactForm" action="/thanks" netlify>
+    <div class="p-4 bg-white rounded-lg shadow border-4 border-green-medium">
+        <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+            <div class="mt-1">
+                <input type="text" name="name" id="name" required
+                    class="shadow-sm focus:ring-green-medium focus:border-green-medium text-black block w-full sm:text-sm border-gray-300 rounded-md"
+                    placeholder="Your Name">
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <div class="mt-1">
+                <input type="text" name="email" id="email" required
+                    class="shadow-sm focus:ring-green-medium focus:border-green-medium text-black block w-full sm:text-sm border-gray-300 rounded-md"
+                    placeholder="you@example.com">
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <label for="message" class="block text-sm font-medium text-gray-700">
+                Message
+            </label>
+            <div class="mt-1">
+                <textarea placeholder="Hi Maciej, I have a project to talk to you about" id="message" name="message"
+                    rows="9" required
+                    class="shadow-sm text-black focus:ring-green-medium focus:border-green-medium block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+            </div>
+
+        </div>
+        <div class="mt-4 flex">
+            <button class="px-4 py-2 bg-green-medium text-white rounded-lg">
+                Hire Me Now
+            </button>
+            <p class="ml-4 text-sm text-gray-500">I'll reply within 1-2 days.</p>
+        </div>
+
+    </div>
+</form>

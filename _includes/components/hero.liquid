@@ -1,0 +1,53 @@
+<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div x-data="{ show: false }" class="mt-24 max-w-6xl mx-auto max-h-screen">
+        <div class="md:flex md:justify-between md:items-start">
+            <img class="block md:hidden w-full h-64 object-top object-cover rounded-lg shadow mb-4 border-4 border-green-medium" src="/img/headshot.jpg" alt="">
+            <div class="max-w-xl">
+                <h2 class="text-5xl sm:text-6xl font-black">Are you looking for a freelnace full stack developer?</h2>
+                <div class="mt-4 prose">
+                    <p><b>Do you need:</b></p>
+                    <ul>
+                        <li>Freelance full stack developer with over 4 years of experience?</li>
+                        <li>Freelance developer experienced with JamStack, TailwindCSS, Alpine.js, Svelte+SvelteKit,
+                            11ty?
+                        </li>
+                        <li>Freelance full stack Shopify developer?</li>
+                    </ul>
+                    <p><b>You are in the right place,</b> here is what you can do next:</p>
+                </div>
+                <div class="mt-8 flex items-center">
+                    <button @click="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });"
+                        type="button" class="btn cta">
+                        Hire Me
+                    </button>
+
+                    <button @click="document.querySelector('#story').scrollIntoView({ behavior: 'smooth' });"
+                        type="button" class="ml-5 btn secondary">
+                        Read More
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="hidden md:block mt-8 flex pr-14">
+
+                <div class="relative">
+                    <div @mouseenter="show = true" @mouseleave="show = false">
+                        <div class="w-80 h-96 bg-green-medium top-14 left-14 rounded-lg absolute">
+                        </div>
+                        <div class="w-80 h-96 bg-black top-7 left-7 rounded-lg absolute">
+                        </div>
+                        <div class="w-80 h-96 ">
+                            <img class="w-full h-full object-cover rounded-lg absolute" src="/img/headshot.jpg" alt="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
