@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Hugh Topping",
+        "image": "/img/ht.png",
+        "text": "It’s a pleasure to work with Maciej. He’s very responsive and knows both Django and Tailwind inside out. He always makes sure that the work is exactly what is required and comes up with good product suggestions along the way. Highly recommended!"
+    },
+    {
+        "name": "Doron Grinstein",
+        "image": "/img/testimonial2.jpg",
+        "text": "Maciej has provided us with custom software development in support of our business. He was quick, diligent and very professional. I will definitely utilize his services in future endeavors. He is an expert Python developer who is a pleasure to work with."
+    },
+    {
+        "name": "Jakub Kępka",
+        "image": "/img/jakub_kepka.jpg",
+        "text": "As someone who works in the arts, I've seen a lot of really good and polished websites, but my favourite is definitely the one Maciej made for me. My whole vision was fulfilled perfectly. I highly recommend. I needed an aesthetically pleasing website to promote my art and I got a better result than I imagined."
+    },
+    {
+        "name": "Karol Zakrzewski",
+        "image": "/img/kz.jpg",
+        "text": "Maciej developed custom web application for us that allowed us to streamline a cumbersome processes and save hundreds of hours of our employees. He designed and developed the application based on our specifications and quickly adapted to any changes in requirements. I highly recommend him for your next project."
+    }
+]
