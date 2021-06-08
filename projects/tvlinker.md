@@ -1,6 +1,6 @@
 ---
-title: TvLinker
-sub-title: Custom Web Application & Chrome Extension
+title: TvLinker - Custom Web Application & Chrome Extension
+description: Televisor needed a web application to help them streamline their business process, regarding adding and obtaining visual references for their projects.
 industry: Advertising
 location: Warsaw, PL
 client: Televisor sp. z o.o.
@@ -8,7 +8,8 @@ image: https://cdn.buttercms.com/ouWREmGvTea2UdWHy2HX
 project-url: https://crowdengage.com/
 stack: ["Django", "Python", "JavaScript", "Alpine.js", "TailwindCSS", "TailwindUI"]
 tags: projects
-layout: article
+layout: project
+order: 2
 ---
 Televisor needed a web application to help them streamline their business process, regarding adding and obtaining visual references for their projects.
 

@@ -3,17 +3,25 @@ title: Projects
 layout: page
 ---
 <div class="mb-24 space-y-4">
-    {% for project in collections.projects %}
+    {% assign projects = collections.projects | order %}
+    {% for project in projects %}
     <div class="px-8 py-8 bg-white rounded-lg shadow">
         <div class="flex items-center">
             <img class="h-36 w-36 object-cover rounded-lg shadow" src="{{ project.data.image }} " alt="">
             <div class="ml-8">
                 <div>
-                    <h3 class="text-green-medium border-b-2 border-green-medium text-xl font-semibold"><a href="{{ project.url }}">{{ project.data.title }}</a></h3>
-                    <span class="text-xs text-black text-gray-500"></span>
+                    <h3 class="text-green-medium border-b-2 border-green-medium text-xl font-semibold"><a href="{{ project.url }}">{{ project.data.title }} - {{ project.data.sub-title }}</a></h3>
+                    <div class="mt-2 flex space-x-2">
+                        {% for tag in project.data.stack %}
+                        <span
+                            class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-medium text-white">
+                            {{ tag }}
+                        </span>
+                        {% endfor %}
+                    </div>
                 </div>
                 
-                <p class="mt-2 max-w-md text-gray-700"></p>
+                <p class="mt-2 max-w-md text-sm text-gray-600">{{ project.data.description }}</p>
                 <a class="mt-2 border-b-2 border-transparent hover:border-green-medium text-green-medium font-semibold inline-flex items-center" href="{{ project.url }}">
                     Read More
                     <svg  class="ml-0.5 h-5 w-5" fill="none" viewBox="0 0 24 24">

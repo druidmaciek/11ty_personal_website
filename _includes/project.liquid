@@ -1,3 +1,25 @@
 ---
 layout: main
 ---
+
+<div class="mt-24 ">
+    <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-12 flex justify-center">
+                <div class="prose prose-dark">
+                    <img class="rounded-lg shadow h-56 w-full object-cover" src="{{ image }}" alt="">
+                    <div class="flex space-x-2">
+                        {% for tag in stack %}
+                        <span
+                            class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-medium text-white">
+                            {{ tag }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                    <h3 class="font-bold">{{ title }}</h3>
+                    {{ content | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 ---
-title: crowdEngage
-sub-title: Rebuild of SaaS Application's Dashboard
+title: crowdEngage - Rebuild of SaaS Application's Dashboard
+description: CrowdEngage asked me to redesign and rebuild their SAAS application dashboard, and add a couple of new features.
 industry: SaaS
 location: Ely, UK
 client: crowdEngage
@@ -8,7 +8,8 @@ project-url: https://crowdengage.com/
 image: https://cdn.buttercms.com/Hzzyszr3SNqtMlZ0Yj73
 stack: ["Django", "Python", "JavaScript", "Alpine.js", "TailwindCSS", "TailwindUI", "Docker"]
 tags: projects
-layout: article
+layout: project
+order: 1
 ---
 CrowdEngage asked me to redesign and rebuild their SAAS application dashboard, and add a couple of new features. 
 
