@@ -95,7 +95,7 @@ A sitemap is an XML file that tells search engines the pages of your website, th
 
 Django comes with a sitemap framework, which allows us to generate sitemaps dynamically.  
 
-To install the Sitemap framework open `[settings.py](http://settings.py)` and add `django.contrib.sites` and `django.contrib.sitemaps` to the `INSTALLED_APPS` setting, and define a new ID for the site.
+To install the Sitemap framework open `settings.py` and add `django.contrib.sites` and `django.contrib.sitemaps` to the `INSTALLED_APPS` setting, and define a new ID for the site.
 ```python
 SITE_ID = 1
 
